@@ -28,12 +28,17 @@ requirements:
     - python >=3.6
     - scipy
     - six
+    - setuptools
 
 test:
+  imports:
+    - h5sparse
+  source_files:
+    - h5sparse/tests.py
   requires:
     - nose
   commands:
-    - nosetests
+    - nosetests --where=h5sparse
 
 about:
   home: "https://github.com/tvandera/h5sparse"
