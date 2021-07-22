@@ -1,9 +1,11 @@
+{% set version = "0.2.2" %}
+
 package:
   name: "h5sparse-tensor"
-  version: "{{ environ.get("GIT_DESCRIBE_TAG", "0.99.9").lstrip("v") }}"
+  version: {{ version }}
 
 source:
-  path: ../..
+  url: https://github.com/tvandera/h5sparse/archive/refs/tags/v{{ version }}.tar.gz
 
 build:
   number: 1
