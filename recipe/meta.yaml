@@ -33,7 +33,7 @@ test:
   requires:
     - nose
   commands:
-    - nosetest
+    - nosetests
 
 about:
   home: "https://github.com/tvandera/h5sparse"
