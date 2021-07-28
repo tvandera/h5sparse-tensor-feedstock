@@ -35,7 +35,7 @@ test:
   files:
     - tests.py
   commands:
-    - {{ PYTHON }} -m unittest
+    - python -m unittest
 
 about:
   home: "https://github.com/tvandera/h5sparse"
